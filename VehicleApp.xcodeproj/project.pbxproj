@@ -7,23 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E826AE1A29E05A1B002E916A /* VehicleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE1929E05A1B002E916A /* VehicleResult.swift */; };
+		E826AE1C29E06394002E916A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE1B29E06394002E916A /* HomeViewModel.swift */; };
+		E826AE1F29E063C5002E916A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE1E29E063C5002E916A /* NetworkManager.swift */; };
+		E826AE2229E0641D002E916A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2129E0641D002E916A /* ErrorMessage.swift */; };
+		E826AE2429E06436002E916A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2329E06436002E916A /* Endpoint.swift */; };
+		E826AE2929E0764F002E916A /* VehicleDetailResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2829E0764F002E916A /* VehicleDetailResult.swift */; };
+		E826AE2B29E0BF34002E916A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2A29E0BF34002E916A /* UIViewController+Extensions.swift */; };
+		E826AE2D29E0C34C002E916A /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2C29E0C34C002E916A /* UIImageView+Extensions.swift */; };
+		E826AE2F29E18117002E916A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826AE2E29E18117002E916A /* DetailViewModel.swift */; };
+		E86B27A129E20D6100DC63EC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86B27A029E20D6100DC63EC /* DetailViewController.xib */; };
+		E86B27A529E2139300DC63EC /* DetailPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86B27A429E2139300DC63EC /* DetailPhotoViewController.xib */; };
+		E86B27A929E216A800DC63EC /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27A829E216A800DC63EC /* DetailPhotoViewController.swift */; };
+		E86B27AB29E3024000DC63EC /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27AA29E3024000DC63EC /* UITextView+Extensions.swift */; };
+		E86B27AD29E3038200DC63EC /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27AC29E3038200DC63EC /* NSAttributedString+Extensions.swift */; };
+		E86B27B129E3058100DC63EC /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27AF29E3058100DC63EC /* DetailTableViewCell.swift */; };
+		E86B27B229E3058100DC63EC /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86B27B029E3058100DC63EC /* DetailTableViewCell.xib */; };
+		E86B27B429E3307B00DC63EC /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27B329E3307B00DC63EC /* Int+Extensions.swift */; };
+		E86B27B629E3FE7800DC63EC /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27B529E3FE7800DC63EC /* UIButton+Extensions.swift */; };
+		E86B27B829E41A7800DC63EC /* DetailPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27B729E41A7800DC63EC /* DetailPhotoViewModel.swift */; };
+		E86B27BB29E4235900DC63EC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27B929E4235900DC63EC /* PhotoCollectionViewCell.swift */; };
+		E86B27BC29E4235900DC63EC /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86B27BA29E4235900DC63EC /* PhotoCollectionViewCell.xib */; };
+		E86B27C729E44AC600DC63EC /* HomeSortSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E86B27C629E44AC600DC63EC /* HomeSortSelectionViewController.xib */; };
+		E86B27CB29E4B10300DC63EC /* SortModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27CA29E4B10300DC63EC /* SortModel.swift */; };
+		E86B27CE29E5A7B200DC63EC /* ViewControllerActionPerformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B27CD29E5A7B200DC63EC /* ViewControllerActionPerformable.swift */; };
 		E8C70E9329E0287100646860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70E9229E0287100646860 /* AppDelegate.swift */; };
 		E8C70E9529E0287100646860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70E9429E0287100646860 /* SceneDelegate.swift */; };
-		E8C70E9729E0287100646860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70E9629E0287100646860 /* ViewController.swift */; };
+		E8C70E9729E0287100646860 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70E9629E0287100646860 /* HomeViewController.swift */; };
 		E8C70E9A29E0287100646860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C70E9829E0287100646860 /* Main.storyboard */; };
 		E8C70E9C29E0287300646860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C70E9B29E0287300646860 /* Assets.xcassets */; };
 		E8C70E9F29E0287300646860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C70E9D29E0287300646860 /* LaunchScreen.storyboard */; };
+		E8C70EA729E030D600646860 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70EA629E030D600646860 /* DetailViewController.swift */; };
+		E8C70EAA29E0316400646860 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70EA829E0316400646860 /* HomeTableViewCell.swift */; };
+		E8C70EAB29E0316400646860 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C70EA929E0316400646860 /* HomeTableViewCell.xib */; };
+		E8C70EBA29E0454000646860 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C70EB929E0454000646860 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E826AE1929E05A1B002E916A /* VehicleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResult.swift; sourceTree = "<group>"; };
+		E826AE1B29E06394002E916A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E826AE1E29E063C5002E916A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E826AE2129E0641D002E916A /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E826AE2329E06436002E916A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E826AE2829E0764F002E916A /* VehicleDetailResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailResult.swift; sourceTree = "<group>"; };
+		E826AE2A29E0BF34002E916A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		E826AE2C29E0C34C002E916A /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		E826AE2E29E18117002E916A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		E86B27A029E20D6100DC63EC /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E86B27A429E2139300DC63EC /* DetailPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPhotoViewController.xib; sourceTree = "<group>"; };
+		E86B27A829E216A800DC63EC /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
+		E86B27AA29E3024000DC63EC /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		E86B27AC29E3038200DC63EC /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		E86B27AF29E3058100DC63EC /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		E86B27B029E3058100DC63EC /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		E86B27B329E3307B00DC63EC /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		E86B27B529E3FE7800DC63EC /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		E86B27B729E41A7800DC63EC /* DetailPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewModel.swift; sourceTree = "<group>"; };
+		E86B27B929E4235900DC63EC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E86B27BA29E4235900DC63EC /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		E86B27C629E44AC600DC63EC /* HomeSortSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSortSelectionViewController.xib; sourceTree = "<group>"; };
+		E86B27CA29E4B10300DC63EC /* SortModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortModel.swift; sourceTree = "<group>"; };
+		E86B27CD29E5A7B200DC63EC /* ViewControllerActionPerformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerActionPerformable.swift; sourceTree = "<group>"; };
 		E8C70E8F29E0287100646860 /* VehicleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C70E9229E0287100646860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8C70E9429E0287100646860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8C70E9629E0287100646860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8C70E9629E0287100646860 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E8C70E9929E0287100646860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8C70E9B29E0287300646860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8C70E9E29E0287300646860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8C70EA029E0287300646860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C70EA629E030D600646860 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8C70EA829E0316400646860 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E8C70EA929E0316400646860 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		E8C70EB929E0454000646860 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +93,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E826AE1D29E063BA002E916A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E826AE1E29E063C5002E916A /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E826AE2029E06410002E916A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E826AE2129E0641D002E916A /* ErrorMessage.swift */,
+				E826AE2329E06436002E916A /* Endpoint.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E826AE3629E1A076002E916A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70EB229E042C500646860 /* HomeTableViewCell */,
+				E86B27AE29E3054D00DC63EC /* DetailTableViewCell */,
+				E826AE3729E1A087002E916A /* PhotoCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E826AE3729E1A087002E916A /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E86B27B929E4235900DC63EC /* PhotoCollectionViewCell.swift */,
+				E86B27BA29E4235900DC63EC /* PhotoCollectionViewCell.xib */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E86B278429E1FF5500DC63EC /* DetailPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				E86B27A829E216A800DC63EC /* DetailPhotoViewController.swift */,
+				E86B27B729E41A7800DC63EC /* DetailPhotoViewModel.swift */,
+			);
+			path = DetailPhoto;
+			sourceTree = "<group>";
+		};
+		E86B27AE29E3054D00DC63EC /* DetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E86B27AF29E3058100DC63EC /* DetailTableViewCell.swift */,
+				E86B27B029E3058100DC63EC /* DetailTableViewCell.xib */,
+			);
+			path = DetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		E86B27CC29E5A79900DC63EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E86B27CD29E5A7B200DC63EC /* ViewControllerActionPerformable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E8C70E8629E0287100646860 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +174,101 @@
 		E8C70E9129E0287100646860 /* VehicleApp */ = {
 			isa = PBXGroup;
 			children = (
-				E8C70E9229E0287100646860 /* AppDelegate.swift */,
-				E8C70E9429E0287100646860 /* SceneDelegate.swift */,
-				E8C70E9629E0287100646860 /* ViewController.swift */,
-				E8C70E9829E0287100646860 /* Main.storyboard */,
+				E8C70EB629E0431A00646860 /* Base */,
+				E826AE2029E06410002E916A /* Utilities */,
+				E826AE1D29E063BA002E916A /* Managers */,
+				E8C70EB829E0453400646860 /* Extensions */,
+				E86B27CC29E5A79900DC63EC /* Helpers */,
+				E8C70EAC29E0427400646860 /* Modules */,
 				E8C70E9B29E0287300646860 /* Assets.xcassets */,
-				E8C70E9D29E0287300646860 /* LaunchScreen.storyboard */,
 				E8C70EA029E0287300646860 /* Info.plist */,
 			);
 			path = VehicleApp;
+			sourceTree = "<group>";
+		};
+		E8C70EAC29E0427400646860 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70EB729E0434800646860 /* Screens */,
+				E8C70EAF29E0428C00646860 /* Models */,
+				E826AE3629E1A076002E916A /* Cells */,
+				E8C70EAD29E0427B00646860 /* Home */,
+				E8C70EAE29E0428000646860 /* Detail */,
+				E86B278429E1FF5500DC63EC /* DetailPhoto */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E8C70EAD29E0427B00646860 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70E9629E0287100646860 /* HomeViewController.swift */,
+				E826AE1B29E06394002E916A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8C70EAE29E0428000646860 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70EA629E030D600646860 /* DetailViewController.swift */,
+				E826AE2E29E18117002E916A /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E8C70EAF29E0428C00646860 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E826AE1929E05A1B002E916A /* VehicleResult.swift */,
+				E826AE2829E0764F002E916A /* VehicleDetailResult.swift */,
+				E86B27CA29E4B10300DC63EC /* SortModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8C70EB229E042C500646860 /* HomeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70EA829E0316400646860 /* HomeTableViewCell.swift */,
+				E8C70EA929E0316400646860 /* HomeTableViewCell.xib */,
+			);
+			path = HomeTableViewCell;
+			sourceTree = "<group>";
+		};
+		E8C70EB629E0431A00646860 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70E9229E0287100646860 /* AppDelegate.swift */,
+				E8C70E9429E0287100646860 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8C70EB729E0434800646860 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70E9D29E0287300646860 /* LaunchScreen.storyboard */,
+				E8C70E9829E0287100646860 /* Main.storyboard */,
+				E86B27A029E20D6100DC63EC /* DetailViewController.xib */,
+				E86B27A429E2139300DC63EC /* DetailPhotoViewController.xib */,
+				E86B27C629E44AC600DC63EC /* HomeSortSelectionViewController.xib */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E8C70EB829E0453400646860 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8C70EB929E0454000646860 /* UIColor+Extensions.swift */,
+				E826AE2A29E0BF34002E916A /* UIViewController+Extensions.swift */,
+				E826AE2C29E0C34C002E916A /* UIImageView+Extensions.swift */,
+				E86B27AA29E3024000DC63EC /* UITextView+Extensions.swift */,
+				E86B27B529E3FE7800DC63EC /* UIButton+Extensions.swift */,
+				E86B27AC29E3038200DC63EC /* NSAttributedString+Extensions.swift */,
+				E86B27B329E3307B00DC63EC /* Int+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +287,8 @@
 			dependencies = (
 			);
 			name = VehicleApp;
+			packageProductDependencies = (
+			);
 			productName = VehicleApp;
 			productReference = E8C70E8F29E0287100646860 /* VehicleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +317,8 @@
 				Base,
 			);
 			mainGroup = E8C70E8629E0287100646860;
+			packageReferences = (
+			);
 			productRefGroup = E8C70E9029E0287100646860 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +335,12 @@
 			files = (
 				E8C70E9F29E0287300646860 /* LaunchScreen.storyboard in Resources */,
 				E8C70E9C29E0287300646860 /* Assets.xcassets in Resources */,
+				E8C70EAB29E0316400646860 /* HomeTableViewCell.xib in Resources */,
+				E86B27A129E20D6100DC63EC /* DetailViewController.xib in Resources */,
+				E86B27A529E2139300DC63EC /* DetailPhotoViewController.xib in Resources */,
+				E86B27BC29E4235900DC63EC /* PhotoCollectionViewCell.xib in Resources */,
+				E86B27C729E44AC600DC63EC /* HomeSortSelectionViewController.xib in Resources */,
+				E86B27B229E3058100DC63EC /* DetailTableViewCell.xib in Resources */,
 				E8C70E9A29E0287100646860 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +352,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C70E9729E0287100646860 /* ViewController.swift in Sources */,
+				E826AE1F29E063C5002E916A /* NetworkManager.swift in Sources */,
+				E86B27B429E3307B00DC63EC /* Int+Extensions.swift in Sources */,
+				E826AE2B29E0BF34002E916A /* UIViewController+Extensions.swift in Sources */,
+				E86B27A929E216A800DC63EC /* DetailPhotoViewController.swift in Sources */,
+				E826AE2D29E0C34C002E916A /* UIImageView+Extensions.swift in Sources */,
+				E8C70E9729E0287100646860 /* HomeViewController.swift in Sources */,
+				E86B27AB29E3024000DC63EC /* UITextView+Extensions.swift in Sources */,
+				E826AE2929E0764F002E916A /* VehicleDetailResult.swift in Sources */,
+				E86B27B629E3FE7800DC63EC /* UIButton+Extensions.swift in Sources */,
+				E86B27BB29E4235900DC63EC /* PhotoCollectionViewCell.swift in Sources */,
+				E86B27CB29E4B10300DC63EC /* SortModel.swift in Sources */,
+				E826AE2229E0641D002E916A /* ErrorMessage.swift in Sources */,
+				E86B27B829E41A7800DC63EC /* DetailPhotoViewModel.swift in Sources */,
+				E826AE1A29E05A1B002E916A /* VehicleResult.swift in Sources */,
+				E8C70EAA29E0316400646860 /* HomeTableViewCell.swift in Sources */,
+				E826AE1C29E06394002E916A /* HomeViewModel.swift in Sources */,
 				E8C70E9329E0287100646860 /* AppDelegate.swift in Sources */,
 				E8C70E9529E0287100646860 /* SceneDelegate.swift in Sources */,
+				E86B27CE29E5A7B200DC63EC /* ViewControllerActionPerformable.swift in Sources */,
+				E8C70EA729E030D600646860 /* DetailViewController.swift in Sources */,
+				E826AE2429E06436002E916A /* Endpoint.swift in Sources */,
+				E826AE2F29E18117002E916A /* DetailViewModel.swift in Sources */,
+				E86B27AD29E3038200DC63EC /* NSAttributedString+Extensions.swift in Sources */,
+				E86B27B129E3058100DC63EC /* DetailTableViewCell.swift in Sources */,
+				E8C70EBA29E0454000646860 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,8 +529,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +539,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mine.VehicleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +561,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +571,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mine.VehicleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
