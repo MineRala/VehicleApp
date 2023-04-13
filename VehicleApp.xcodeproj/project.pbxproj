@@ -193,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				E86B27DC29E5DE9A00DC63EC /* Modules */,
-				E8FA9D1529E6B5490040809C /* MockVariables.swift */,
 				E86B27D529E5DE0300DC63EC /* VehicleAppTests.swift */,
 			);
 			path = VehicleAppTests;
@@ -206,6 +205,7 @@
 				E8FA9D1029E604EC0040809C /* Detail */,
 				E8FA9D0929E602070040809C /* DetailPhoto */,
 				E86B27E229E5F64600DC63EC /* MockNetworkManager.swift */,
+				E8FA9D1529E6B5490040809C /* MockVariables.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
