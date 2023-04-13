@@ -1,5 +1,5 @@
 # VehicleApp
-Vehicle App + MVVM + Unit Tests
+Vehicle App: MVVM + Delegate + Storyboard + Xib + Programmatic UI + Unit Tests
 
 # Pages
 - Launch Screen
