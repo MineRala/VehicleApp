@@ -39,7 +39,6 @@ final class HomeViewController: UIViewController {
     var picker  = UIPickerView()
     var toolBar = UIToolbar()
     
-    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,13 +48,14 @@ final class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewModel.viewWillAppear()
-       
     }
 }
 
 // MARK: - HomeViewInterface
 extension HomeViewController: HomeViewInterface {
     func configureNavigationBar() {
+        view.backgroundColor = .white
+        navigationController?.navigationBar.barTintColor = .white
         self.navigationItem.title = "Araçlar"
         let attributes = [NSAttributedString.Key.foregroundColor: HomeViewConstant.titleTextAttributesColor, NSAttributedString.Key.font : UIFont.systemFont(ofSize: HomeViewConstant.fontSize, weight: .bold)]
         self.navigationController?.navigationBar.titleTextAttributes = attributes
@@ -69,6 +69,8 @@ extension HomeViewController: HomeViewInterface {
         vehicleTableView.delegate = self
         vehicleTableView.register(UINib(nibName: HomeTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: HomeTableViewCell.cellReuseIdentifier)
         vehicleTableView.reloadData()
+        vehicleTableView.backgroundColor = .white
+        vehicleTableView.layer.backgroundColor = UIColor.white.cgColor
     }
     
     func reloadTableView() {
@@ -130,8 +132,9 @@ extension HomeViewController: HomeViewInterface {
     func configureToolBar() {
         toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
         toolBar.barStyle = .default
+        toolBar.barTintColor = UIColor.Palette.azure
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let titleButton = UIBarButtonItem(title: "Sıralama Kriteri seçin", style: .plain, target: nil, action: nil)
+        let titleButton = UIBarButtonItem(title: "Sıralama Kriteri seçin", style: .plain, target: self, action: nil)
         titleButton.isEnabled = false
         let cancelButton = UIBarButtonItem.init(title: "Vazgeç", style: .plain, target: self, action: #selector(cancelButtonTapped))
         cancelButton.tintColor = UIColor.black.withAlphaComponent(0.5)
@@ -209,9 +212,7 @@ extension HomeViewController: UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         viewModel.numberOfRowsInComponent
     }
-    
 }
-
 
 // MARK: - UIPickerViewDelegate
 extension HomeViewController: UIPickerViewDelegate {

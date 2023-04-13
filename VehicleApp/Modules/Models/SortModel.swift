@@ -41,5 +41,4 @@ enum SortType {
             return Sort(title: "Yıla göre azalan", sortType: 2, sortDirection: 1)
         }
     }
-    
 }

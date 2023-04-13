@@ -48,8 +48,4 @@ extension UIViewController {
         self.navigationController?.view.layer.add(transition, forKey: kCATransition)
         self.navigationController?.pushViewController(vc, animated: false)
     }
-    
-    
-    
-    
 }

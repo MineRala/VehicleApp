@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum VAError: String, Error {
     case invalidKeyword = "Invalid keyword. Please try again"
     case unableToComplete = "Unable to complete your request. Please check your internet connection."

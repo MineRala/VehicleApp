@@ -32,11 +32,11 @@ final class HomeViewModel {
     // MARK: - Properties
     private weak var view: HomeViewInterface?
     private let storeManager: NetworkManagerProtocol
-    private var vehicleList = [Vehicle]()
-    private let sortList: [SortType] = [.zero, .priceAscending, .priceDescending, .dateAscending, .dateDescending, .yearAscending, .yearDescending]
-    private var sortItem: SortType = .zero
-    private var isPresentingVC = true
-    private var isSortButtonTapped = true
+    internal var vehicleList = [Vehicle]()
+    internal var sortList: [SortType] = [.zero, .priceAscending, .priceDescending, .dateAscending, .dateDescending, .yearAscending, .yearDescending]
+    internal var sortItem: SortType = .zero
+    internal var isPresentingVC = true
+    internal var isSortButtonTapped = true
     internal var skipNumber = 0
     private var sortNumber = -1
     private var sortDirectionNumber = -1
@@ -47,7 +47,7 @@ final class HomeViewModel {
         self.storeManager = storeManager
     }
     
-    func selectedVehicle(id: Int) {
+    private func selectedVehicle(id: Int) {
         storeManager.makeRequest(endpoint: .detailVehicle(id: id), type: VehicleDetailResult.self) { [weak self] result in
             switch result {
             case .success(let vehicleDetailResult):
@@ -78,9 +78,9 @@ extension HomeViewModel: HomeViewModelInterface {
     }
     
     func viewDidLoad() {
-        setVehicle(sort: sortNumber, sortDirection: sortDirectionNumber, skip: skipNumber)
         view?.configureNavigationBar()
         view?.configureTableView()
+        setVehicle(sort: sortNumber, sortDirection: sortDirectionNumber, skip: skipNumber)
     }
     
     func viewWillAppear() {
@@ -156,5 +156,4 @@ extension HomeViewModel: HomeViewModelInterface {
         isSortButtonTapped = true
         view?.viewEnabilityWhenPickerClose()
     }
-    
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - VehicleDetailResult
-struct VehicleDetailResult: Decodable {
+struct VehicleDetailResult: Decodable, Equatable {
     let id: Int
     let title: String
     let location: Location
@@ -21,6 +21,9 @@ struct VehicleDetailResult: Decodable {
     let text: String
     let userInfo: UserInfo
     
+    public static func == (lhs: VehicleDetailResult, rhs: VehicleDetailResult) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 // MARK: - Category
@@ -30,9 +33,13 @@ struct Category: Decodable {
 }
 
 // MARK: - Property
-struct Property: Decodable {
+struct Property: Decodable, Equatable {
     let name: String
     let value: String
+    
+    public static func == (lhs: Property, rhs: Property) -> Bool {
+        return lhs.name == rhs.name && lhs.value == lhs.value
+    }
 }
 
 // MARK: - UserInfo

@@ -24,6 +24,7 @@ protocol DetailViewModelInterface {
     func getItem(at index: Int) -> Property
     func addPhoto()
     func segmentControl(at index: Int)
+    func dismiss()
 }
 
 // MARK: - Class Bone
@@ -31,7 +32,7 @@ final class DetailViewModel {
     // MARK: - Properties
     private weak var view: DetailViewInterface?
     private var vehicleDetailResult: VehicleDetailResult
-    private var tableItemList = [Property]()
+    internal var tableItemList = [Property]()
     internal var photoList = [String]()
     
     // MARK: Cons & Decons
@@ -52,18 +53,10 @@ final class DetailViewModel {
                          Property(name: "Yakıt", value: vehicleDetailResult.properties[4].value),
         ]
     }
-    
-   
 }
 
 // MARK: - DetailViewModelInterface
 extension DetailViewModel: DetailViewModelInterface {
-    func addPhoto() {
-        for photo in vehicleDetailResult.photos {
-            photoList.append(photo.replacingOccurrences(of: "{0}", with: "800x600"))
-        }
-    }
-    
     var numberOfItemsInSection: Int {
         photoList.count
     }
@@ -114,6 +107,12 @@ extension DetailViewModel: DetailViewModelInterface {
         tableItemList[index]
     }
     
+    func addPhoto() {
+        for photo in vehicleDetailResult.photos {
+            photoList.append(photo.replacingOccurrences(of: "{0}", with: "800x600"))
+        }
+    }
+    
     func segmentControl(at index: Int) {
         switch index {
         case 0:
@@ -123,5 +122,9 @@ extension DetailViewModel: DetailViewModelInterface {
         default:
             break
         }
+    }
+    
+    func dismiss() {
+        view?.dismissVC()
     }
 }

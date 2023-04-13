@@ -61,4 +61,3 @@ extension HomeTableViewCell {
         priceLabel.text = model.price.convertPriceToString()
     }
 }
-

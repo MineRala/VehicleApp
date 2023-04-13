@@ -9,6 +9,7 @@ import Foundation
 
 protocol DetailPhotoViewModelInterface {    
     func viewDidLoad()
+    func dismiss()
 }
 
 // MARK: - Class Bone
@@ -27,5 +28,9 @@ extension DetailPhotoViewModel: DetailPhotoViewModelInterface {
     func viewDidLoad() {
         view?.setupUI()
         view?.configureGesture()
+    }
+    
+    func dismiss() {
+        view?.dismissVC()
     }
 }

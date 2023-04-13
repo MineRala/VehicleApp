@@ -115,6 +115,7 @@ extension DetailViewController: DetailViewInterface {
         descTextView.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         descTextView.textColor = UIColor.Palette.darkGrey
         descTextView.lineSpacing = 6
+        descTextView.backgroundColor = .white
     }
     
     func setUI(model: VehicleDetailResult) {
@@ -145,6 +146,8 @@ extension DetailViewController: DetailViewInterface {
         photoCollectionView.dataSource = self
         photoCollectionView.register(UINib(nibName: PhotoCollectionViewCell.nibName, bundle: .main), forCellWithReuseIdentifier: PhotoCollectionViewCell.cellReuseIdentifier)
         photoCollectionView.reloadData()
+        photoCollectionView.backgroundColor = .white
+        photoCollectionView.layer.backgroundColor = UIColor.white.cgColor
     }
     
     func configureSegmentedControll() {
@@ -164,6 +167,8 @@ extension DetailViewController: DetailViewInterface {
         detailTableView.delegate = self
         detailTableView.dataSource = self
         detailTableView.register(UINib(nibName: DetailTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: DetailTableViewCell.cellReuseIdentifier)
+        detailTableView.backgroundColor = .white
+        detailTableView.layer.backgroundColor = UIColor.white.cgColor
     }
     
     func makeAPhoneCall(with phoneNumber: String) {
@@ -272,11 +277,9 @@ extension DetailViewController {
         viewModel?.phoneButtonTapped()
     }
     
-    
     @IBAction func messageButtonTapped(_ sender: Any) {
         viewModel?.messageButtonTapped()
     }
-    
 }
 
 // MARK: - MFMessageComposeViewControllerDelegate
@@ -292,8 +295,6 @@ extension DetailViewController: MFMessageComposeViewControllerDelegate {
         default:
             print("Unknown")
         }
-        dismissVC()
+        viewModel?.dismiss()
     }
 }
-
-

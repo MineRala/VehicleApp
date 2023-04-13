@@ -53,6 +53,5 @@ extension DetailTableViewCell {
         } else {
             valueLabel.text = item.value
         }
-        
     }
 }

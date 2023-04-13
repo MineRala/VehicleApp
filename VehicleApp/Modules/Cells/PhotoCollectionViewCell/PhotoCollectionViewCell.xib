@@ -19,10 +19,12 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HR8-09-hEg">
                         <rect key="frame" x="0.0" y="0.0" width="380" height="245"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="HR8-09-hEg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PUU-EA-gIg"/>
                 <constraint firstAttribute="bottom" secondItem="HR8-09-hEg" secondAttribute="bottom" id="ZDe-uh-LbZ"/>

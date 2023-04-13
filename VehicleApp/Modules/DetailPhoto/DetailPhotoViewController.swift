@@ -60,10 +60,10 @@ extension DetailPhotoViewController: DetailPhotoViewInterface {
 // MARK: - Actions
 extension DetailPhotoViewController {
     @objc private func swipeAction() {
-        dismissVC()
+        viewModel.dismiss()
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        dismissVC()
+        viewModel.dismiss()
     }
 }

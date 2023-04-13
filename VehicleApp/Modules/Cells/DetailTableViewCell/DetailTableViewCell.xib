@@ -33,6 +33,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="kSU-ce-0pt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="3cz-Jp-cNP"/>
                     <constraint firstItem="TjF-St-uOm" firstAttribute="centerY" secondItem="kSU-ce-0pt" secondAttribute="centerY" id="L6U-rX-c33"/>
@@ -41,6 +42,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="kSU-ce-0pt" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="rrf-Ju-pRC"/>
             </constraints>
